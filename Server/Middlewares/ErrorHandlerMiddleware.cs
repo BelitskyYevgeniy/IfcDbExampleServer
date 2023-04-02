@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
-
+using IfcDb.Exceptions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
@@ -34,6 +34,13 @@ namespace Server.Middlewares
             catch (FileAlreadyExistsException e)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.Found;
+
+                context.Response.ContentType = "text/plain";
+                await context.Response.WriteAsync(e.ToString());
+            }
+            catch (IfcObjParsingFailedException e)
+            {
+                context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
 
                 context.Response.ContentType = "text/plain";
                 await context.Response.WriteAsync(e.ToString());
