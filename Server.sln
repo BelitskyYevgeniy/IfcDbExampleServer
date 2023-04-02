@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{9BEFD5E9-78B0-4621-A3AD-1E6470FCB75F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{6F2C4653-10C1-46BC-9835-DF5EC815A994}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{638A8F14-FF93-4450-AF50-5F60FD88A666}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BEFD5E9-78B0-4621-A3AD-1E6470FCB75F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEFD5E9-78B0-4621-A3AD-1E6470FCB75F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEFD5E9-78B0-4621-A3AD-1E6470FCB75F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEFD5E9-78B0-4621-A3AD-1E6470FCB75F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2C4653-10C1-46BC-9835-DF5EC815A994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2C4653-10C1-46BC-9835-DF5EC815A994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2C4653-10C1-46BC-9835-DF5EC815A994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2C4653-10C1-46BC-9835-DF5EC815A994}.Release|Any CPU.Build.0 = Release|Any CPU
+		{638A8F14-FF93-4450-AF50-5F60FD88A666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{638A8F14-FF93-4450-AF50-5F60FD88A666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{638A8F14-FF93-4450-AF50-5F60FD88A666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{638A8F14-FF93-4450-AF50-5F60FD88A666}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAB76C12-61C4-4940-AF5B-38EC11C6596B}
+	EndGlobalSection
+EndGlobal
