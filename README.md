@@ -1,7 +1,7 @@
 # Server
 
 ## Description
-Server-example of using IfcDb library
+Server-example of using [IfcDb](https://github.com/BelitskyYevgeniy/IfcDb) library
 
 ## Requirements
 - install MsSQL Server  
