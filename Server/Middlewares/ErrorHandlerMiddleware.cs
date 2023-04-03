@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Net;
 using System.Threading.Tasks;
-using IfcDb.Exceptions;
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
 using Services.Exceptions;
+
+using IfcDb.Exceptions;
 
 namespace Server.Middlewares
 {
@@ -29,21 +31,21 @@ namespace Server.Middlewares
                 context.Response.StatusCode = (int)HttpStatusCode.NotFound;
 
                 context.Response.ContentType = "text/plain";
-                await context.Response.WriteAsync(e.ToString());
+                await context.Response.WriteAsync(e.Message);
             }
             catch (FileAlreadyExistsException e)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.Found;
 
                 context.Response.ContentType = "text/plain";
-                await context.Response.WriteAsync(e.ToString());
+                await context.Response.WriteAsync(e.Message);
             }
-            catch (IfcObjParsingFailedException e)
+            catch (IfcParsingFailedException e)
             {
                 context.Response.StatusCode = (int)HttpStatusCode.BadRequest;
 
                 context.Response.ContentType = "text/plain";
-                await context.Response.WriteAsync(e.ToString());
+                await context.Response.WriteAsync(e.Message);
             }
             catch (Exception e)
             {
